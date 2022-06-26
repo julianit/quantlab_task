@@ -24,12 +24,36 @@
     <ClCompile Include="Processor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Accumulators.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StreamReaders.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StreamParsers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Outputs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Trade.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Processor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Accumulators.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StreamReaders.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StreamParsers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Outputs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

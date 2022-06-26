@@ -1,12 +1,19 @@
 #pragma once
 
-#include <map>
+//#include <map>
 #include <memory>
 #include<string> 
 #include<vector> 
 
+struct BaseData
+{
+	virtual ~BaseData() = default;
+};
 
-struct Trade
+using data_ptr_t = std::unique_ptr<BaseData>;
+using data_vec_t = std::vector<data_ptr_t>;
+
+struct Trade : public BaseData
 {
 public:
 	std::uint64_t timestamp{ 0 };
@@ -16,16 +23,16 @@ public:
 };
 
 using trade_ptr_t = std::unique_ptr <Trade>;
-using trade_vec_ptr_t = std::vector<trade_ptr_t>;
+//using trade_vec_ptr_t = std::vector<trade_ptr_t>;
 
 
-struct TradeResult
-{
-	std::uint64_t max_ts_gap{ 0 };
-	std::uint64_t max_price{ 0 };
-	std::uint64_t total_volume{ 0 };
-	std::uint64_t total_amount{ 0 };
-	std::uint64_t previous_ts{ 0 };
-};
-
-using trade_acc_map_t = std::map<std::string, TradeResult>;
+//struct TradeResult
+//{
+//	std::uint64_t max_ts_gap{ 0 };
+//	std::uint64_t max_price{ 0 };
+//	std::uint64_t total_volume{ 0 };
+//	std::uint64_t total_amount{ 0 };
+//	std::uint64_t previous_ts{ 0 };
+//};
+//
+//using trade_acc_map_t = std::map<std::string, TradeResult>;

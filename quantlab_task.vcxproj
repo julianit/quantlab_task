@@ -183,10 +183,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Accumulators.cpp" />
+    <ClCompile Include="Outputs.cpp" />
     <ClCompile Include="Processor.cpp" />
     <ClCompile Include="quantlab_task.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug UnitTest|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="StreamParsers.cpp" />
+    <ClCompile Include="StreamReaders.cpp" />
     <ClCompile Include="Test.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
@@ -194,7 +198,11 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Accumulators.h" />
+    <ClInclude Include="Outputs.h" />
     <ClInclude Include="Processor.h" />
+    <ClInclude Include="StreamParsers.h" />
+    <ClInclude Include="StreamReaders.h" />
     <ClInclude Include="Trade.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
