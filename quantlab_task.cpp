@@ -7,5 +7,5 @@
 int main()
 {
 	trade_acc_map_t TradesResultMap;
-	return Process(TradesResultMap) ? 0 : 1;
+	return Process(TradesResultMap, "test_input/short_input.csv") ? 0 : 1;
 }

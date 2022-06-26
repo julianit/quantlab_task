@@ -104,10 +104,10 @@ void accumulate(const trade_vec_ptr_t& trade_vec, trade_acc_map_t& TradesResultM
 	}
 }
 
-bool Process(trade_acc_map_t& TradesResultMap)
+bool Process(trade_acc_map_t& TradesResultMap, std::string filepath)
 {
 	std::ifstream stream;
-	stream.open("test_input/short_input.csv");
+	stream.open(filepath);
 	if (!stream.is_open())
 	{
 		std::cout << "Failed to open input the stream" << std::endl;
